@@ -1,16 +1,16 @@
 package com.luandev.entities;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class OrderItem {
     private Integer quantity;
     private double price;
+    private Product product;
 
 
-    public OrderItem(Integer quantity, double price) {
+    public OrderItem(Integer quantity, double price, Product product) {
         this.quantity = quantity;
         this.price = price;
+        this.product = product;
     }
 
     public Integer getQuantity() {
@@ -27,5 +27,13 @@ public class OrderItem {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }

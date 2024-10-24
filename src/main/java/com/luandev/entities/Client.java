@@ -1,13 +1,14 @@
 package com.luandev.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
     private String name;
     private String email;
-    private Date birthDate;
+    private String birthDate;
 
-    public Client(String name, String email, Date birthDate) {
+    public Client(String name, String email, String birthDate) {
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
@@ -29,11 +30,11 @@ public class Client {
         this.email = email;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 }

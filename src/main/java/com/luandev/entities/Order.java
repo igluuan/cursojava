@@ -16,10 +16,7 @@ public class Order {
         this.status = status;
     }
 
-    public Date getMoment() {
-
-        return moment;
-    }
+    public Date getMoment() { return moment; }
 
     public OrderStatus getStatus() {
         return status;
